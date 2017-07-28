@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+    android:background="#eee"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Bank Transaction"
+        android:id="@+id/transaction_type"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        tools:text="$ 123"
+        android:id="@+id/transaction_amount"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:paddingTop="15dp"
+        android:id="@+id/transaction_reason"
+        android:layout_below="@+id/transaction_type"
+        tools:text="Banking transaction for client project from USA for something good cause project and startup idea."
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:background="#000"
+android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>
