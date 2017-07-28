@@ -34,7 +34,15 @@ public class CSVLoader extends AsyncTaskLoader<List<Transaction>>
     @Override
     protected void onStartLoading() {
         super.onStartLoading();
-        forceLoad();
+        if(transactionList!= null && transactionList.size() > 0)
+        {
+            deliverResult(transactionList);
+        }
+        else
+        {
+            forceLoad();
+        }
+
     }
 
     @Override
